@@ -422,6 +422,7 @@ nav {
             font-size: 18px;
             letter-spacing: 5.5px;
             margin: 24px 10px;
+            color:#6415ff;
         }
 
         .quality__description {
@@ -460,76 +461,65 @@ nav {
         /* Steps */
 
         #steps .row {
-            display:flex;
+            display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
+        
+        .steps__description,
+        .steps__img--wrapper {
+            width: 50%;
+        }
+        
+        .steps__img--wrapper {
+            display: flex;
+            position: relative;
+        }
+        
+        .steps__img {
+            max-width: 500px;
+        }
 
         .steps__description {
+            padding: 32px 0;
+            padding-left: 64px;
             display:flex;
-            justify-content: center;
-            width: 50%;
-            height: 80%;
+            flex-wrap: wrap;
         }
-
-        .section__tag--steps {
-            display:flex;
-            justify-content: flex-start;
-            padding: 48px 24px 24px 24px;
-            width: 100%;
-            font-weight: bold;
-            font-size: 18px;
-            letter-spacing: 1.5px;
-            margin: 24px 10px;
-        }
-
-        .laptop__img {
-            display:flex;
-            align-items:center;
-            width: 50%;
-        }
-
-       .laptop {
-        width: 100%;
-       }
         
-       .steps__title {
-        font-weight:bolder;
-        font-size:48px;
-       }
-
-       .step {
-        display: flex;
-        flex-direction: row;
-        margin-top: 32px;
-       }
-
-       .step__number {
-        font-size: 32px;
-        color: rgb(209, 206, 206);
-        height:20%;
-       }
-
-       .step__description {
-        display: flex;
-        flex-direction:column;
-        margin-left:24px;
-        max-width: 320px;
-       }
-
-       .step__title {
-        font-size: 28px;
-       }
-
-       .step__para {
-        font-size: 14px;
-        color: #718096;
-        margin-top: 12px;
-        font-weight: 500px;
-        line-height: 2; 
-        letter-spacing: normal;
-       }
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 32px;
+        }
+        
+        .step__number {
+            color: #cbd5e0;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 1;
+        }
+        
+        .step__description {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        
+        .step__title {
+            font-weight: 600;
+            font-size: 20px;
+            color: #243e63;
+            line-height: 1;
+        }
+        
+        .step__para {
+            font-size: 14px;
+            color: #718096;
+            margin-top: 12px;
+            font-weight: 500;
+            line-height: 2;
+        }
 
        /* Values */
 
@@ -612,7 +602,7 @@ nav {
        width: 50%;
     }
 
-    .ipad__img {
+    .values__img {
         width: 328px;
     }
 
@@ -865,12 +855,18 @@ nav {
 
 /* Testimonials */
 
+
+#testimonials .row {
+    display:flex;
+    justify-content: space-between;
+    }
+
 .container3 {
     display:flex;
 
 }
 
-.couple {
+.testimonials__img {
     width: 50%;
 }
     
@@ -907,9 +903,11 @@ nav {
     font-size: 30px;
 }
 
-.testimonial__description { 
+.testimonial__description {
+    display:flex;
+    flex-direction: column; 
     padding: 0px 0px 0px 64px;
-    width: 100%;
+    width: 50%;
 
 }
 
@@ -1309,6 +1307,45 @@ footer {
         margin-top: 64px;
         text-align: center;
     }
+    #quality .section__tag {
+        padding: 0;
+        margin: 0;
+        color:#6415ff;
+    }
+
+    .quality__description {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    #values .row {
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+    .section__tag--values {
+        display:flex;
+        justify-content: center;
+    }
+
+    #testimonials .row {
+        display:flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items:center;
+    }
+       
+    }
+
+    .testimonials__img {
+        width:100%;
+        max-width:448px;
+    }
+
+
+
     .quality__description,
     .quality__img--wrapper,
     .steps__description,
@@ -1321,13 +1358,13 @@ footer {
         width: 100%;
         max-width: 448px;
     }
-    #steps .row,
+    
     #testimonials .row {
         flex-direction: column;
         align-items: center;
     }
     .step {
-        flex-direction: column;
+        flex-direction:column;
         align-items: center;
     }
     .step__description {
