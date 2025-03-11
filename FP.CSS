@@ -1446,7 +1446,8 @@ footer {
     .values__img,
     .testimonials__description,
     .testimonials__img
-    . {
+    
+    {
         width: 100%;
         max-width: 448px;
     }
