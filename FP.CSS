@@ -1381,7 +1381,7 @@ footer {
 
     .section__tag2 {
         display:block;
-    }
+    } 
     
     .step {
         display:flex;
@@ -1428,6 +1428,7 @@ footer {
     .footer__social--link:first-child {
         margin-left: 0px;
     }
+}
 
 
 @media(max-width: 640px) {
